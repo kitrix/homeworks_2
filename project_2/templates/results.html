@@ -1,0 +1,16 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты поиска</title>
+</head>
+<body>
+	<h3>Найдены следующие ответы:</h3>
+	{% for i in result %}
+		<p>{{i}}</p>
+	{% endfor %}
+	<a href="/"> На главную </a><br>
+	<a href="/stats"> Статистика </a><br>
+	<a href="/json"> Json </a><br>
+	<a href="/search"> Поиск </a>	
+</body>
+</html>

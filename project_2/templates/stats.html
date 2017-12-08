@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика</title>
+</head>
+
+<body>
+	<h1>Статистика участников опроса</h1>
+	<p><b>Всего: </b>{{number}}</p>
+	<p><b>Пол</b><br>{% for key, value in sex.items() %}{{ key }} : {{ value }}<br>{% endfor %}</p>
+	<p><b>Возраст</b><br>{% for key, value in age.items() %}{{ key }} : {{ value }}<br>{% endfor %}</p>
+	<p><b>Родной язык</b><br>{% for key, value in language.items() %}{{ key }} : {{ value }}<br>{% endfor %}</p>
+	<p><b>Родной город</b><br>{% for key, value in city.items() %}{{ key }} : {{ value }}<br>{% endfor %}</p>
+	<p><b>Образование</b><br>{% for key, value in education.items() %}{{ key }} : {{ value }}<br>{% endfor %}</p>
+	<a href="/"> На главную </a><br>
+	<a href="/json"> Json </a><br>
+	<a href="/search"> Поиск </a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+</head>
+<body>
+	<a href="/json"> Json </a><br>
+	<a href="/stats"> Статистика </a><br>
+	<a href="/search"> Поиск </a>
+	<h2>Оттенки красного и фиолетового</h2>
+
+	<p>Заполните информацию о себе</p>
+	<form>
+		<p><b>Пол:</b></p>
+		<input type="radio" name="sex" value="мужской" required>мужской<Br>
+		<input type="radio" name="sex" value="женский" required>женский<Br>
+		<p><b>Возраст: </b> <input type="text" name="age" value="" required></p>
+		<p><b>Родной язык:</b> <input type="text" name="lang" value="" required></p>
+		<p><b>Родной город:</b> <input type="text" name="city" value="" required></p>
+		<p><b>Уровень образования:</b></p>
+		<input type="radio" name="edu" value="неоконченное среднее" required>неоконченное среднее<Br>
+		<input type="radio" name="edu" value="среднее" required>среднее<Br>
+		<input type="radio" name="edu" value="среднеспециальное/профессиональное" required>среднеспециальное/профессиональное<Br>
+		<input type="radio" name="edu" value="неоконченное высшее" required>неоконченное высшее<Br>
+		<input type="radio" name="edu" value="высшее" required>высшее<Br>
+		<p>Под каждой картинкой напишите, как бы вы назвали этот цвет или оттенок</p>
+		<img src="{{url_for('static', filename='color_1.jpg')}}" />
+		<p><b>цвет 1:</b> <input type="text" name="color1" value="" required></p>
+		<img src="{{url_for('static', filename='color_2.jpg')}}" />
+		<p><b>цвет 2:</b> <input type="text" name="color2" value="" required></p>
+		<img src="{{url_for('static', filename='color_3.jpg')}}" />
+		<p><b>цвет 3:</b> <input type="text" name="color3" value="" required></p>
+		<img src="{{url_for('static', filename='color_4.jpg')}}" />
+		<p><b>цвет 4:</b> <input type="text" name="color4" value="" required></p>
+		<img src="{{url_for('static', filename='color_5.jpg')}}" />
+		<p><b>цвет 5:</b> <input type="text" name="color5" value="" required></p>
+		<input type="submit" value="Отправить">
+	</form>
+</body>
+</html>
