@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Результаты</title>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+  	<ul class="nav">
+	<li class="nav-item">
+		<a class="nav-link" href="/">На главную</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="/news">Коммерсантъ</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="/test">Пройти тест</a>
+	  </li>
+	</ul>
+	<div class="container">
+		<h4>Ваш результат: верно {{ result }} из 10</h4>
+		{%if mistakes %}
+		<h6>Вы ошиблись в этих словах:</h6>
+		{% endif %}
+		<ul>
+			{% for m in mistakes %}
+			<li>{{ m }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</body>
+</html>
