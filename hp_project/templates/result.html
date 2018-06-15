@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Результат</title>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+		<h1 class="display-3">Что это?</h1>
+		<p class="lead">Веб-сервис генерирует предложения в ответ на реплику пользователя на основе корпуса ("Гарри Поттер", все части) и марковской модели</p>
+		</div>
+	</div>
+	
+
+	<div class="container">
+		<div class="row">
+		<div class="col col-lg-8">
+		<form>
+			<div class="alert alert-success" role="alert">
+					{{ result }}
+			</div>
+			<div class="form-group">
+				<p class="font-weight-light">Введите новые данные или обновите страницу</p>
+				<input type="text" class="form-control" name="input" placeholder="Введите начало предложения">
+			</div>
+				
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+		 </div>
+		 </div>
+	</div>
+
+ 
+
+</body>
+</html>
